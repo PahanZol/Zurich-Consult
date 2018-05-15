@@ -1,0 +1,212 @@
+/*-------------MEDIA-----------------*/
+
+@media all and (max-width:1250px)
+{
+	
+	.about__img
+	{
+		display: none;
+
+	}
+	.about__main-content
+	{
+		justify-content: center;
+	}
+	.about__text
+	{	max-width: 500px;
+		flex-grow: 1;
+		margin: 0 20px;
+	}
+	.about__services
+	{
+		padding-left: 10px;
+		flex-basis: 400px;
+		flex-shrink: 0;
+	}
+
+	.news
+	{
+		padding: 0 20px 100px 20px;
+	}
+	.news-item
+	{
+		flex-basis: 20%;
+	}
+	.news__news-container
+	{
+		justify-content: center;
+	}
+
+	.footer__menu
+	{
+		display: none;
+	}
+
+
+}
+
+
+/*---FOR NEWS-ITEM 3RD BLOCK HIDE---*/
+
+@media all and (max-width:1181px)
+{
+	.news-item:nth-child(3)
+	{
+		display: none;
+	}
+}
+
+@media all and (max-width:850px)
+{
+
+
+	/*----MENU NAMBURGER START----*/
+	.menu-icon
+	{
+		display: flex;
+	}
+	nav
+	{
+		left: 0;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		z-index: 1;
+		padding: 0; margin: 0;
+		display: none;   /*CHAMGE TO FLEX WHEN CLICK ON HAMB*/
+		background-color: rgba(0,0,0,0.7);
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-nav
+	{
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+		height: 75%;
+		justify-content: space-between;
+		width: 100%;
+
+	}
+
+	.menu-nav li, .menu-nav li:nth-last-child(1)
+	{
+		margin: 0;
+		font-size: 32px;
+		text-transform: uppercase;
+		text-align: center;
+		border-bottom: 1px solid rgba(200,200,200,0.1);
+		width: 100%;
+	}
+	/*----MENU NAMBURGER END----*/
+
+
+	@media all and (max-width:789px)
+	{
+		.news-item
+		{
+			margin-bottom: 100px;
+			transition: all 1s ease;
+		}
+	}
+	.menu-nav
+	{
+		/*display: none;*/
+	}
+	
+	header
+	{
+		padding: 0 20px;
+		box-sizing: padding-box;
+	}
+
+	/*.topnav, .content
+	{
+		margin: 0 20px;
+		width: 100%;
+	}*/
+
+	.main-content
+	{
+		margin:0;
+	}
+
+	.scroll-downs
+	{
+		display: none;
+	}
+
+	.infoblock h1
+	{
+		font-size: 32px;
+	}
+
+	.infoblock p
+	{
+		font-size: 14px;
+		letter-spacing: 0.5px;
+	}
+
+
+
+	.about, .about__services
+	{
+		margin-bottom: 0;
+	}
+
+	.about__services
+	{
+		flex-basis: auto;
+		margin: 0 20px;
+	}
+
+	.about__text
+	{
+		text-align: center;
+		margin: 0 20px 50px 20px;
+	}
+
+	.about__text, .about__services
+	{
+		align-items: center;
+		padding: 0;
+		
+	}
+
+	.about__service
+	{
+		justify-content: flex-start;
+	}
+	.about__main-content
+	{
+		flex-direction: column;
+	}
+
+/*-----------------MAIN ADVANTAGES-------------*/
+	
+	.main-advantages
+	{
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main-advantages__text
+	{
+		margin: 100px 0 0 0;
+	}
+	
+/*---------------------FOOTER-------------------*/
+
+
+	footer
+	{
+		height: auto;
+		margin: 20px 0;
+	}
+	.footer
+	{
+		flex-direction: column;
+	}
+
+}
